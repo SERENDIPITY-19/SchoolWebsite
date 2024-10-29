@@ -13,6 +13,7 @@
                 <li class="nav-item"><a class="nav-link" href="admissions.html">Admissions</a></li>
                 <li class="nav-item"><a class="nav-link" href="academics.html">Academics</a></li>
                 <li class="nav-item"><a class="nav-link" href="facilities.html">Facilities</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://demo.replsolutions.com.np/Home/Register">Enquiry</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
             </ul>
             <button class="btn-close d-lg-none" aria-label="Close"></button>
@@ -20,7 +21,16 @@
         <a class="navbar-brand mx-auto d-lg-none" href="index.html">
             <img src="images/logo.png" alt="School Image" class="logo">
         </a>
-        <a href="login.html" class="btn btn-primary ml-auto" id="login-button">Login</a>
+        <div class="dropdown ml-auto">
+            <button class="btn btn-primary dropdown-toggle custom-login-button" id="login-button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Login <span class="dropdown-icon"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end custom-dropdown-menu" aria-labelledby="login-button">
+                <li><a class="dropdown-item" href="login.html">Admin Login</a></li>
+                <li><a class="dropdown-item" href="login.html">Teacher Login</a></li>
+                <li><a class="dropdown-item" href="login.html">Student/Parent Login</a></li>
+            </ul>
+        </div>
     </div>
 </nav>
 
