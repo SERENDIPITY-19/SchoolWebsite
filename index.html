@@ -1,175 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css" />
     <link rel="icon" type="image/png" href="images/favicon-48x48.png" sizes="48x48" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
-<body>
-    <div id="navbar-placeholder"></div>
 
-    <section class="hero-section">
-        <div class="hero-text">
-            <h1 class="display-4 display-md-1">Welcome to REPL School</h1>
-            <p class="lead">Empowering young minds to achieve their fullest potential.</p>
-        </div>
-    </section>    
+<body class="body">
+    <div class="grid-container-home">
+        <nav class="navbar-placeholder"></nav>
 
-    <section id="highlights" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Why Choose Us?</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="images/quality-education.jpg" class="card-img-top" alt="Quality Education">
-                        <div class="card-body">
-                            <h5 class="card-title">Quality Education</h5>
-                            <p class="card-text">Our school is committed to providing high-quality education, with a focus on holistic development and innovative learning practices.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="images/extracurricular.jpg" class="card-img-top" alt="Extracurricular Activities">
-                        <div class="card-body">
-                            <h5 class="card-title">Extracurricular Activities</h5>
-                            <p class="card-text">We offer a range of extracurricular programs, helping students explore their passions and develop leadership and teamwork skills.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="images/innovative.jpg" class="card-img-top" alt="Innovative Learning Environment">
-                        <div class="card-body">
-                            <h5 class="card-title">Innovative Learning Environment</h5>
-                            <p class="card-text">We foster creativity and critical thinking through state-of-the-art technology and interactive learning spaces, preparing students for the future.</p>
-                        </div>
-                    </div>
-                </div>                
+        <header class="hero-section">
+            <div class="hero-text">
+                <h1 class="display-4 display-md-1">Welcome to REPL School</h1>
+                <p class="lead">
+                    Empowering young minds to achieve their fullest potential.
+                </p>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <section id="testimonials" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">What Our Students & Parents Say</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                        <div class="card testimonial-card h-100">
-                            <div class="text-center">
-                                <img src="images/parent1.jpg" class="rounded-circle img-fluid" alt="Parent1">
-                            </div>
-                            <div class="card-body text-center">
-                                <p class="testimonial-text">"REPL School has been a transformative experience for my child. The teachers are wonderful and truly care about their students' growth!"</p>
-                                <h5 class="testimonial-name">Mrs. Gita Ghimire</h5>
-                                <p class="testimonial-role text-muted">Parent of Grade 3 Student</p>
-                            </div>
-                        </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card testimonial-card h-100">
-                        <div class="text-center">
-                            <img src="images/student1.png" class="rounded-circle img-fluid" alt="Student1">
-                        </div>
-                        <div class="card-body text-center">
-                            <p class="testimonial-text">"I love how REPL combines academics with creativity. The environment here is friendly, and I've made some amazing friends along the way!"</p>
-                            <h5 class="testimonial-name">Anita Kunwar</h5>
-                            <p class="testimonial-role text-muted">Grade 9 Student</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card testimonial-card h-100">
-                        <div class="text-center">
-                            <img src="images/student2.png" class="rounded-circle img-fluid" alt="Student2">
-                        </div>
-                        <div class="card-body text-center">
-                            <p class="testimonial-text">"The extracurriculars offered here are amazing. I feel like I’ve grown so much in both academics and life skills."</p>
-                            <h5 class="testimonial-name">Pranita Shakya</h5>
-                            <p class="testimonial-role text-muted">Grade 10 Student</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="events" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Upcoming Events</h2>
-            <div id="eventsCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="card h-100 event-card">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="images/sports-day.jpg" class="img-fluid rounded-start" alt="Sports Day">
+        <main class="home-page-main">
+            <section class="highlights">
+                <div class="container">
+                    <h2 class="text-center mb-5">Why Choose Us?</h2>
+                    <div class="row">
+                        <article class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="images/quality-education.jpg" class="card-img-top" alt="Quality Education" />
+                                <div class="card-body">
+                                    <h5 class="card-title">Quality Education</h5>
+                                    <p class="card-text">
+                                        Our school is committed to providing high-quality
+                                        education, with a focus on holistic development and
+                                        innovative learning practices.
+                                    </p>
                                 </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Annual Sports Day</h5>
-                                        <p class="card-text">Join us for a day of exciting sports activities and competitions. Celebrate physical fitness and school spirit!</p>
-                                        <p class="card-text"><small class="text-muted">Date: November 15, 2024</small></p>
+                            </div>
+                        </article>
+                        <article class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="images/extracurricular.jpg" class="card-img-top"
+                                    alt="Extracurricular Activities" />
+                                <div class="card-body">
+                                    <h5 class="card-title">Extracurricular Activities</h5>
+                                    <p class="card-text">
+                                        We offer a range of extracurricular programs, helping
+                                        students explore their passions and develop leadership and
+                                        teamwork skills.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="images/innovative.jpg" class="card-img-top"
+                                    alt="Innovative Learning Environment" />
+                                <div class="card-body">
+                                    <h5 class="card-title">Innovative Learning Environment</h5>
+                                    <p class="card-text">
+                                        We foster creativity and critical thinking through
+                                        state-of-the-art technology and interactive learning
+                                        spaces, preparing students for the future.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonials">
+                <div class="container">
+                    <h2 class="text-center mb-5">What Our Students & Parents Say</h2>
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <article class="card testimonial-card h-100">
+                                <div class="text-center">
+                                    <img src="images/parent1.jpg" class="rounded-circle img-fluid" alt="Parent1" />
+                                </div>
+                                <div class="card-body text-center">
+                                    <blockquote class="testimonial-text">
+                                        "REPL School has been a transformative experience for my
+                                        child. The teachers are wonderful and truly care about
+                                        their students' growth!"
+                                    </blockquote>
+                                    <h5 class="testimonial-name">Mrs. Gita Ghimire</h5>
+                                    <p class="testimonial-role text-muted">
+                                        Parent of Grade 3 Student
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <article class="card testimonial-card h-100">
+                                <div class="text-center">
+                                    <img src="images/student1.png" class="rounded-circle img-fluid" alt="Student1" />
+                                </div>
+                                <div class="card-body text-center">
+                                    <blockquote class="testimonial-text">
+                                        "I love how REPL combines academics with creativity. The
+                                        environment here is friendly, and I've made some amazing
+                                        friends along the way!"
+                                    </blockquote>
+                                    <h5 class="testimonial-name">Anita Kunwar</h5>
+                                    <p class="testimonial-role text-muted">Grade 9 Student</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <article class="card testimonial-card h-100">
+                                <div class="text-center">
+                                    <img src="images/student2.png" class="rounded-circle img-fluid" alt="Student2" />
+                                </div>
+                                <div class="card-body text-center">
+                                    <blockquote class="testimonial-text">
+                                        "The extracurriculars offered here are amazing. I feel
+                                        like I've grown so much in both academics and life
+                                        skills."
+                                    </blockquote>
+                                    <h5 class="testimonial-name">Pranita Shakya</h5>
+                                    <p class="testimonial-role text-muted">Grade 10 Student</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="events">
+                <div class="container">
+                    <h2 class="text-center mb-5">Upcoming Events</h2>
+                    <div id="eventsCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <article class="carousel-item active">
+                                <div class="card h-100 event-card">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="images/sports-day.jpg" class="img-fluid rounded-start"
+                                                alt="Sports Day" />
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Annual Sports Day</h5>
+                                                <p class="card-text">
+                                                    Join us for a day of exciting sports activities and
+                                                    competitions. Celebrate physical fitness and school
+                                                    spirit!
+                                                </p>
+                                                <p class="card-text">
+                                                    <small class="text-muted">Date: November 15, 2024</small>
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="card h-100 event-card">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="images/science-fair.jpg" class="img-fluid rounded-start" alt="Science Fair">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Science Fair</h5>
-                                        <p class="card-text">Our annual Science Fair showcases students' creativity and scientific talents. Everyone is welcome to attend and explore the innovations!</p>
-                                        <p class="card-text"><small class="text-muted">Date: December 5, 2024</small></p>
+                            </article>
+                            <article class="carousel-item">
+                                <div class="card h-100 event-card">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="images/science-fair.jpg" class="img-fluid rounded-start"
+                                                alt="Science Fair" />
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Science Fair</h5>
+                                                <p class="card-text">
+                                                    Our annual Science Fair showcases students'
+                                                    creativity and scientific talents. Everyone is
+                                                    welcome to attend and explore the innovations!
+                                                </p>
+                                                <p class="card-text">
+                                                    <small class="text-muted">Date: December 5, 2024</small>
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </article>
                         </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#eventsCarousel"
+                            data-bs-slide="prev">
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#eventsCarousel"
+                            data-bs-slide="next">
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#eventsCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#eventsCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+            </section>
+
+            <section class="cta">
+                <div class="cta-overlay">
+                    <div class="container text-light py-5">
+                        <h2 class="cta-heading">Enroll Your Child at REPL</h2>
+                        <p class="cta-text lead">
+                            Join a community of lifelong learners. Discover how we nurture
+                            students to reach their full potential.
+                        </p>
+                        <a href="admissions.html" class="btn btn-success btn-lg mt-3 cta-button">Explore Admissions</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="custom-footer">
+            <div class="text-center p-3">
+                © 2024 REPL School. All Rights Reserved.
             </div>
-        </div>
-    </section>
-    
-    <section id="cta" class="text-center py-5">
-        <div class="cta-overlay">
-            <div class="container text-light py-5">
-                <h2 class="cta-heading">Enroll Your Child at REPL</h2>
-                <p class="cta-text lead">Join a community of lifelong learners. Discover how we nurture students to reach their full potential.</p>
-                <a href="admissions.html" class="btn btn-success btn-lg mt-3 cta-button">Explore Admissions</a>
-            </div>
-        </div>
-    </section>
-  
-    <footer class="bg-light text-center text-lg-start">
-        <div class="text-center p-3">
-            © 2024 REPL School. All Rights Reserved.
-        </div>
-    </footer>
-    
-    <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+        </footer>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
     <script>
-        $(function() {
-            $("#navbar-placeholder").load("navbar.html");
+        $(function () {
+            $(".navbar-placeholder").load("navbar2.html");
         });
     </script>
 </body>
+
 </html>

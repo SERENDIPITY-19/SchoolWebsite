@@ -1,0 +1,46 @@
+<nav class="custom-navbar">
+    <div class="menu-icon" id="menuIcon">
+        <span></span>
+        <span></span>
+    </div>
+    <span class="menu-text" id="menuText">MENU</span>
+
+    <div class="side-menu" id="sideMenu">
+        <button class="close-btn" id="closeBtn">&times;</button>
+        <ul class="menu-items">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="https://demo.replsolutions.com.np/Home/Register">Enquiry</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <a class="nav-logo" href="index.html">
+        <img src="images/logo.png" alt="School Image" class="logo">
+    </a>
+    <div class="nav-login dropdown ml-auto">
+        <button class="btn btn-primary dropdown-toggle custom-login-button" id="login-button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Login <span class="dropdown-icon"></span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end custom-dropdown-menu" aria-labelledby="login-button">
+            <li><a class="dropdown-item" href="login.html">Admin Login</a></li>
+            <li><a class="dropdown-item" href="login.html">Teacher Login</a></li>
+            <li><a class="dropdown-item" href="login.html">Student/Parent Login</a></li>
+        </ul>
+    </div>
+    
+</nav>
+
+<script>
+$(document).ready(function () {
+    $('#menuIcon,#menuText').click(function () {
+        $('#sideMenu').css('left', '0');
+    });
+
+    $('#closeBtn').click(function () {
+        $('#sideMenu').css('left', '-250px');
+    });
+});
+</script>

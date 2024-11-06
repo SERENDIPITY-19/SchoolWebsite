@@ -5,40 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
     <link rel="icon" type="image/png" href="images/favicon-48x48.png" sizes="48x48" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style2.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"/>
   </head>
-  <body>
-    <div id="navbar-placeholder"></div>
+  <body class="body">
 
+    <div class="grid-container-about">
+    <nav class="navbar-placeholder"></nav>
+
+    <header class="about-page-header">
     <img src="images/school.jpg" alt="School Image" class="school-image" />
-
-    <div class="container mt-3">
-      <section id="about-us">
-        <div class="mb-5">
-        <h1 class="mb-3">Introduction</h1>
+    </header>
+   
+    <main class="about-page-main custom-container">
+      <section class="introduction">
+        <h2 class="about-titles">Introduction</h2>
         <p>
           Welcome to REPL, a center for academic excellence, innovative learning, and holistic student development. We take pride in fostering an environment where students not only excel academically but also develop essential life skills, creativity, and resilience. Through our balanced curriculum and diverse extracurricular programs, we aim to inspire a love for learning and personal growth in every student. Since our founding, we have embraced a commitment to both academic rigor and personal well-being, creating a community where students can grow academically, socially, and emotionally, developing the confidence and competence to succeed in all aspects of life.
         </p>
         <p>
           Founded in 2000, REPL has a rich tradition of academic achievement and community involvement. Over the years, our school has grown from a small institution to a leading educational establishment, known for producing exceptional students and nurturing lifelong learners. We are dedicated to upholding our reputation for excellence, innovation, and character-building, making REPL one of the most respected schools in the region.
         </p>
-      </div>
+      </section>
       
-      <div class="mb-5">
+      <section class="mission">
         <h4 class="about-titles">Mission</h4>
         <p>
           Our mission is to provide a nurturing, inclusive, and supportive learning environment where every student is empowered to reach their full potential, not only through academic excellence but also through personal and social growth. We aim to inspire students to become responsible, thoughtful individuals with a lifelong passion for learning, preparing them to face the challenges of a rapidly evolving world with confidence, curiosity, and resilience. By focusing on both academic and personal development, we strive to shape individuals who are well-rounded, compassionate, and ready to make meaningful contributions to society.
         </p>
-      </div>
-      <div class="mb-5">
+      </section>
+
+      <section class="vision">
         <h4 class="about-titles">Vision</h4>
         <p>
           We envision a future where our students become compassionate, responsible, and innovative leaders who contribute positively to society and the global community. At REPL, we see our graduates as individuals who uphold strong ethical values, exhibit critical thinking, and embrace cultural diversity, making a positive impact wherever they go. We are committed to fostering a community where students are equipped with the skills, knowledge, and mindset necessary to excel in an interconnected, diverse, and constantly changing world.
         </p>
-      </div>
+      </section>
 
-      <div class="principal-message mb-5">
+      <section class="principal-message">
         <h4 class="about-titles">Message from the Principal</h4>
         <div class="row">
             <div>
@@ -51,20 +55,21 @@
                 <br><em>- Mr. ABC, Principal</em>
             </div>
         </div>
-    </div>    
+      </section>
+      </main>    
 
-    <footer class="bg-light text-center text-lg-start">
+    <footer class="custom-footer">
       <div class="text-center p-3">
         © 2024 REPL School. All Rights Reserved.
       </div>
     </footer>
-
-    <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
     <script>
       $(function () {
-        $("#navbar-placeholder").load("navbar.html");
+        $(".navbar-placeholder").load("navbar2.html");
       });
     </script>
   </body>
