@@ -1,10 +1,11 @@
 <nav class="custom-navbar">
+    <div class="nav-content d-flex align-items-center">
     <div class="menu-icon" id="menuIcon">
         <span></span>
         <span></span>
     </div>
     <span class="menu-text" id="menuText">MENU</span>
-
+    </div>
     <div class="side-menu" id="sideMenu">
         <button class="close-btn" id="closeBtn">&times;</button>
         <ul class="menu-items">
@@ -17,6 +18,16 @@
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </div>
+    <div class="nav-language dropdown ms-3 ms-sm-0 ms-md-3">
+        <button class="btn dropdown-toggle custom-language-button" id="language-button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Language <span class="dropdown-icon"></span>
+        </button>
+            <ul class="list-unstyled dropdown-menu custom-dropdown-menu" aria-labelledby="language-button">
+                <li><a class="dropdown-item" href="#">नेपाली</a></li>
+                <li><a class="dropdown-item" href="#">English</a></li>
+            </ul>
+    </div>
+    
     <a class="nav-logo" href="index.html">
         <img src="images/logo.png" alt="School Image" class="logo">
     </a>
